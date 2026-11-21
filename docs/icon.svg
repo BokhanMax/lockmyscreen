@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4f9bf0"/>
+      <stop offset="1" stop-color="#2b5fc0"/>
+    </linearGradient>
+    <linearGradient id="bell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cfe3f7"/>
+      <stop offset="1" stop-color="#8fb3d9"/>
+    </linearGradient>
+    <radialGradient id="face" cx="0.45" cy="0.4" r="0.7">
+      <stop offset="0" stop-color="#f8fbff"/>
+      <stop offset="1" stop-color="#dfe9f5"/>
+    </radialGradient>
+  </defs>
+
+  <g stroke="#1e2a3a" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <!-- legs -->
+    <line x1="168" y1="410" x2="128" y2="470" />
+    <line x1="344" y1="410" x2="384" y2="470" />
+
+    <!-- hammer -->
+    <line x1="256" y1="96" x2="256" y2="60" />
+    <circle cx="256" cy="52" r="14" fill="#8fb3d9"/>
+
+    <!-- bells -->
+    <g transform="rotate(-35 150 120)">
+      <path d="M92 140 A58 58 0 0 1 208 140 Z" fill="url(#bell)"/>
+      <line x1="150" y1="82" x2="150" y2="66"/>
+      <circle cx="150" cy="60" r="7" fill="#8fb3d9"/>
+    </g>
+    <g transform="rotate(35 362 120)">
+      <path d="M304 140 A58 58 0 0 1 420 140 Z" fill="url(#bell)"/>
+      <line x1="362" y1="82" x2="362" y2="66"/>
+      <circle cx="362" cy="60" r="7" fill="#8fb3d9"/>
+    </g>
+
+    <!-- body -->
+    <circle cx="256" cy="282" r="170" fill="url(#body)"/>
+    <!-- face -->
+    <circle cx="256" cy="282" r="132" fill="url(#face)"/>
+  </g>
+
+  <!-- hour ticks -->
+  <g stroke="#1e2a3a" stroke-linecap="round">
+    <g stroke-width="10">
+      <line x1="256" y1="168" x2="256" y2="190"/>
+      <line x1="256" y1="374" x2="256" y2="396"/>
+      <line x1="142" y1="282" x2="164" y2="282"/>
+      <line x1="348" y1="282" x2="370" y2="282"/>
+    </g>
+    <g stroke-width="6">
+      <line x1="313" y1="183.3" x2="307" y2="193.7"/>
+      <line x1="354.7" y1="225" x2="344.3" y2="231"/>
+      <line x1="354.7" y1="339" x2="344.3" y2="333"/>
+      <line x1="313" y1="380.7" x2="307" y2="370.3"/>
+      <line x1="199" y1="380.7" x2="205" y2="370.3"/>
+      <line x1="157.3" y1="339" x2="167.7" y2="333"/>
+      <line x1="157.3" y1="225" x2="167.7" y2="231"/>
+      <line x1="199" y1="183.3" x2="205" y2="193.7"/>
+    </g>
+  </g>
+
+  <!-- hands -->
+  <g stroke-linecap="round">
+    <line x1="256" y1="282" x2="256" y2="200" stroke="#1e2a3a" stroke-width="12"/>
+    <line x1="256" y1="282" x2="316" y2="316" stroke="#1e2a3a" stroke-width="14"/>
+    <line x1="256" y1="282" x2="210" y2="350" stroke="#2b5fc0" stroke-width="5"/>
+  </g>
+  <circle cx="256" cy="282" r="13" fill="#2b5fc0" stroke="#1e2a3a" stroke-width="5"/>
+
+  <!-- shine -->
+  <path d="M130 220 A140 140 0 0 1 200 150" fill="none" stroke="#ffffff" stroke-opacity="0.45" stroke-width="10" stroke-linecap="round"/>
+</svg>
