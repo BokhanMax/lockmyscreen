@@ -2,6 +2,8 @@
 
 A tiny Windows timer that **locks your computer** (or just reminds you) when time is up.
 
+🌐 **Website:** [bokhanmax.github.io/lockmyscreen](https://bokhanmax.github.io/lockmyscreen/)
+
 Put the soup on the stove, start a 30-minute timer, keep working. When the time runs out, Windows locks the screen, just like pressing **Win+L**, so you can't miss it.
 
 ## Features
@@ -23,7 +25,10 @@ Put the soup on the stove, start a 30-minute timer, keep working. When the time 
 
 ## Requirements
 
-Windows 10 or Windows 11. Nothing else needs to be installed.
+- Windows 10 or Windows 11
+- 64-bit (x64) or 32-bit (x86). The app is built as *Any CPU* and runs natively on both.
+
+Nothing else needs to be installed.
 
 ## Installation
 
