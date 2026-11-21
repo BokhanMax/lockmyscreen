@@ -1,0 +1,18 @@
+# Результаты сборки — пересоздаются командой dotnet build
+bin/
+obj/
+
+# Готовые установщики — пересоздаются build-installer.ps1.
+# Выкладывать их лучше в Releases на GitHub, а не в репозиторий.
+dist/
+
+# Личные файлы Visual Studio / Rider / VS Code
+.vs/
+.idea/
+.vscode/
+*.user
+*.suo
+
+# Мусор Windows
+Thumbs.db
+desktop.ini

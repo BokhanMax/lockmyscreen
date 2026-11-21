@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <!-- .NET Framework 4.8 встроен в Windows 10/11 — программе ничего не нужно доустанавливать. -->
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>LockMyScreen</AssemblyName>
+    <RootNamespace>LockMyScreen</RootNamespace>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>icons\app.ico</ApplicationIcon>
+    <Product>LockMyScreen</Product>
+    <Version>0.1.0</Version>
+    <!-- Чистая версия «0.1.0» без хвоста от git — её читает установщик. -->
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Неявный using System.Net.Http в .NET Framework без отдельной ссылки не работает, а он нам не нужен. -->
+    <Using Remove="System.Net.Http" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="icons\app.ico" LogicalName="LockMyScreen.app.ico" />
+  </ItemGroup>
+
+</Project>
